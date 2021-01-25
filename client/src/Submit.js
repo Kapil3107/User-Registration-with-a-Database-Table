@@ -3,7 +3,17 @@ import './Submit.css';
 import Register_Success from './images/Register_Success.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { withRouter } from 'react-router-dom';
+
 class Submit extends Component {
+    onClick1 = () => {
+        this.props.history.push('/users');
+    }
+
+    onClick2 = () => {
+        this.props.history.push('/');
+    }
+
     render() {
         return (
             <div className="mainBody">
@@ -16,9 +26,9 @@ class Submit extends Component {
                         Hurray! You have successfully registered
                     </div>
                     <div class="user">
-                        <a href="/"><FontAwesomeIcon icon={['fas', 'angle-double-left']} /> Go back to the register page</a>
+                        <a className="a" onClick={this.onClick2}><FontAwesomeIcon icon={['fas', 'angle-double-left']} /> Go back to the register page</a>
                         <br></br>
-                        <a href="/users"><FontAwesomeIcon icon={['fas', 'angle-double-right']} /> See all the registered users</a>
+                        <a className="a" onClick={this.onClick1}><FontAwesomeIcon icon={['fas', 'angle-double-right']} /> See all the registered users</a>
                     </div>
                 </div>
             </div>
@@ -26,4 +36,4 @@ class Submit extends Component {
     }
 }
 
-export default Submit;
+export default withRouter(Submit);

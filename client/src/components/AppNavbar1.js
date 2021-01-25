@@ -37,7 +37,7 @@ class AppNavbar1 extends Component {
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                    <NavLink onClick={this.onClick}>Registered Users</NavLink>
+                                    <NavLink style={{ cursor: 'pointer' }} onClick={this.onClick}>Registered Users</NavLink>
                                 </NavItem>
                             </Nav>
                         </Collapse>

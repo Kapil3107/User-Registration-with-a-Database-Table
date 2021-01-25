@@ -77,18 +77,20 @@ img {
   text-align: left;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
 .user {
   text-align: left;
   padding: 2px 30px 5px 60px;
   border-radius: 0px 0px 20px;
   font-size: 2vmin;
   background: #fff;
-  color: #83aebd;
+  color: rgb(0, 174, 255);
   float: left;
   font-weight: 600;
   font-style: normal;
+}
+
+.a:hover {
+  text-decoration: none;
+  color: rgb(0, 128, 128);
+  cursor: pointer;
 }
