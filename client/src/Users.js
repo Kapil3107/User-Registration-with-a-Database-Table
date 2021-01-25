@@ -8,7 +8,7 @@ import { useTable, useFilters, useGlobalFilter, useAsyncDebounce, usePagination,
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import AppNavbar_2 from "./components/AppNavbar_2";
+import AppNavbar2 from "./components/AppNavbar2";
 
 // Define a default UI for filtering
 function GlobalFilter({
@@ -71,7 +71,6 @@ function Table({ columns, data }) {
         getTableProps,
         getTableBodyProps,
         headerGroups,
-        rows,
         prepareRow,
         state,
         preGlobalFilteredRows,
@@ -272,7 +271,7 @@ function Users(props) {
     return (
         <div>
             <div>
-                <AppNavbar_2 />
+                <AppNavbar2 />
             </div>
             <Container>
                 <Table columns={columns} data={data} />

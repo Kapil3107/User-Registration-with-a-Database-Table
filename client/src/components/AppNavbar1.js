@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import {
     Collapse,
     Navbar,
@@ -10,9 +10,15 @@ import {
     Container
 } from 'reactstrap';
 
-class AppNavbar_1 extends Component {
+import { withRouter } from 'react-router-dom';
+
+class AppNavbar1 extends Component {
     state = {
         isOpen: false
+    }
+
+    onClick = () => {
+        this.props.history.push('/users');
     }
 
     toggle = () => {
@@ -31,7 +37,7 @@ class AppNavbar_1 extends Component {
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                    <NavLink href="/users">Registered Users</NavLink>
+                                    <NavLink onClick={this.onClick}>Registered Users</NavLink>
                                 </NavItem>
                             </Nav>
                         </Collapse>
@@ -42,4 +48,4 @@ class AppNavbar_1 extends Component {
     }
 }
 
-export default AppNavbar_1;
+export default withRouter(AppNavbar1);

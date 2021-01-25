@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, FormGroup, Label, Input, FormFeedback, FormText, Button, Alert } from 'reactstrap';
+import { Form, FormGroup, Label, Input, FormFeedback, Button } from 'reactstrap';
 
 import { connect } from 'react-redux';
 import { addInfo } from '../actions/infoActions';
