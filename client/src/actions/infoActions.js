@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { GET_INFOS, ADD_INFO, INFOS_LOADING } from './types';
+import { GET_INFOS, ADD_INFO, INFOS_LOADING, CLEAR_MSG } from './types';
 import { returnErrors } from './errorActions';
 
 export const getInfos = () => dispatch => {
@@ -29,6 +29,7 @@ export const addInfo = (info) => dispatch => {
                 type: ADD_INFO,
                 payload: res.data
             });
+            dispatch(clearMessage());
         })
         .catch(err => {
             dispatch(returnErrors(err.response.data, err.response.status));
@@ -38,5 +39,11 @@ export const addInfo = (info) => dispatch => {
 export const setInfosLoading = () => {
     return {
         type: INFOS_LOADING
+    }
+}
+
+export const clearMessage = () => {
+    return {
+        type: CLEAR_MSG
     }
 }

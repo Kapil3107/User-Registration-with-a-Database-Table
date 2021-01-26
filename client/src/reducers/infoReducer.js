@@ -1,4 +1,4 @@
-import { GET_INFOS, ADD_INFO, INFOS_LOADING } from '../actions/types';
+import { GET_INFOS, ADD_INFO, INFOS_LOADING, CLEAR_MSG } from '../actions/types';
 
 const initialState = {
     infos: [],
@@ -25,6 +25,11 @@ export default function foo(state = initialState, action) {
             return {
                 ...state,
                 loading: true
+            }
+        case CLEAR_MSG:
+            return {
+                ...state,
+                msg: {}
             }
         default:
             return state;
