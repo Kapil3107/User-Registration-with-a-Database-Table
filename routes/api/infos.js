@@ -32,7 +32,7 @@ router.post('/', (req, res) => {
 
             newInfo.save().then(info => res.json(info));
 
-            return res.json({ msg: 'Success' });
+            return res.status(200).json({ msg: 'Success' });
         });
 });
 
