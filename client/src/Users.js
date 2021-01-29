@@ -257,7 +257,7 @@ function Users(props) {
         props.info.infos.map(function ({ name, email, phoneNo, dateOfBirth, gender, education }) {
             return (
                 {
-                    "name": name.toLowerCase(),
+                    "name": name,
                     "email": email,
                     "phoneNo": phoneNo,
                     "dateOfBirth": dateOfBirth,
