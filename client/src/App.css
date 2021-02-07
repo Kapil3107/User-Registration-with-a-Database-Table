@@ -4,3 +4,22 @@ body {
   font-weight: 400;
   font-style: italic;
 }
+
+.errorInput {
+  border: 1px solid #cc0033 !important;
+  box-shadow: 0 0 6px rgb(220, 33, 20) inset !important;
+}
+
+.errorStyle {
+  color: red;
+  font-size: 13px;
+}
+
+.asterisk {
+  color: red;
+}
+
+.buttonStyleError {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
