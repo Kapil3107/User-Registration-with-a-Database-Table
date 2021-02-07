@@ -151,11 +151,7 @@ class AppForm extends React.Component {
         enctype="multipart/form-data"
         onSubmit={this.handleSubmit}
       >
-        {this.state.msg ? (
-          <h4 style={{ color: "red", textAlign: "center" }}>
-            {this.state.msg}
-          </h4>
-        ) : null}
+        {this.state.msg ? <h4 className="errMsg">{this.state.msg}</h4> : null}
 
         <FormGroup>
           <FormInput
