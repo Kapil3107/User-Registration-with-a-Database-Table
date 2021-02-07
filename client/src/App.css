@@ -5,6 +5,10 @@ body {
   font-style: italic;
 }
 
+.navlink {
+  cursor: pointer;
+}
+
 .errorInput {
   border: 1px solid #cc0033 !important;
   box-shadow: 0 0 6px rgb(220, 33, 20) inset !important;

@@ -1,0 +1,21 @@
+.top {
+  margin-top: 25px;
+}
+
+.page-link {
+  color: black;
+}
+
+.page-index {
+  width: 100px;
+  height: 20px;
+}
+
+.page-size {
+  width: 120px;
+  height: 38px;
+}
+
+.icon {
+  color: grey;
+}
