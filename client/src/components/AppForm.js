@@ -269,7 +269,7 @@ class AppForm extends React.Component {
         </FormGroup>
         <br />
         {this.state.checkBox ? (
-          <Button>Submit</Button>
+          <Button className="btn">Submit</Button>
         ) : (
           <Button disabled className="buttonStyleError">
             Submit

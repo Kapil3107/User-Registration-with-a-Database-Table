@@ -35,7 +35,12 @@ body {
   color: red;
 }
 
+.btn {
+  margin-bottom: 100px;
+}
+
 .buttonStyleError {
+  margin-bottom: 100px;
   cursor: not-allowed;
   pointer-events: all !important;
 }
